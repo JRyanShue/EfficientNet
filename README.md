@@ -7,6 +7,7 @@ The goal will be to match the accuracy attained by the official implementation o
 
 ## MBConv
 Like the original EfficientNet implementation, this model will use MBConv bottleneck layers as the convolutional layers.
+MBConv layers first apply a 1x1 convolution layer with ReLU activation, then perform a depthwise convolution with ReLU that expands the representation into 6 times more channels than the input. Finally, a linear 1x1 convolution layer (no nonlinearity) compresses the representation into the original dimension. A residual connection is applied between the two 1x1 convolutional layers. 
 MBConv layers were proposed in the paper "MobileNetV2: Inverted Residuals and Linear Bottlenecks" (2018) and the implementation here will be built from scratch. 
 
 ## ResNet
