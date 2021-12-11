@@ -2,8 +2,8 @@
 # EfficientNet
 This model is built for image classification. 
 Implementation of the paper "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks" (2019) from scratch.
-The code will train the 5.3M-parameter EfficientNet-B0 for compute efficiency. 
-The goal will be to match the accuracy attained by the official implementation of EfficientNet-B0 on ImageNet.
+The code will train the 4M-parameter EfficientNet-B0 for compute efficiency. 
+The goal will be to match the accuracy attained by the official implementation of EfficientNet-B0 on CIFAR-10 (98.1%).
 
 ## MBConv
 Like the original EfficientNet implementation, this model will use MBConv bottleneck layers as the convolutional layers.
